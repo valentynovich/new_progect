@@ -23,39 +23,193 @@
 
    <!---- header --->
 
-   <header class="header">
+   <!-- <header class="header">
       <div class="container container-header">
          <div class="header__flex">
-            <a class="logo link">
+            <a class="logo link" href="">
                ACA
             </a>
             <ul class="header__list list">
-               <li class="header__item"><a class="link" href="">
+               <li class="header__item"><a class="link" href="#courses">
                      <p>Courses</p>
                   </a></li>
-               <li class="header__item"><a class="link" href="">
+               <li class="header__item"><a class="link" href="#about">
                      <p>About</p>
                   </a></li>
-               <li class="header__item"><a class="link" href="">
+               <li class="header__item"><a class="link" href="#services">
                      <p>Services</p>
                   </a></li>
-               <li class="header__item"><a class="link" href="">
+               <li class="header__item"><a class="link" href="#events">
                      <p>Events</p>
                   </a></li>
-               <li class="header__item"><a class="link" href="">
+               <li class="header__item"><a class="link" href="#blog">
                      <p>Blog</p>
                   </a></li>
             </ul>
             <button class="btn btn-header">Contact</button>
          </div>
       </div>
+   </header> -->
+
+   <header class="header container">
+      <div class="container-header">
+         <a class="logo link" href="">
+            ACA
+         </a>
+         <nav>
+            <ul class="header__list list">
+               <li class="header__item"><a class="link" href="#courses">
+                     <p>Courses</p>
+                  </a></li>
+               <li class="header__item"><a class="link" href="#about">
+                     <p>About</p>
+                  </a></li>
+               <li class="header__item"><a class="link" href="#services">
+                     <p>Services</p>
+                  </a></li>
+               <li class="header__item"><a class="link" href="#events">
+                     <p>Events</p>
+                  </a></li>
+               <li class="header__item"><a class="link" href="#blog">
+                     <p>Blog</p>
+                  </a></li>
+            </ul>
+         </nav>
+         <button class="btn btn-header">Contact</button>
+         <button class="btn menu-burger" type="button" data-mobile-menu-open><svg width="16" height="14">
+               <use href="./images/svg/all-icons.svg#icon-menu-burger"></use>
+            </svg></button>
+      </div>
+
+      <div class="menu-mobil is-hidden" data-mobile-menu>
+         <button type="button" class="button-modal btn" data-mobile-menu-close>
+            <svg class="button-modal__icon" width="18" height="18">
+               <use href="./images/svg/all-icons.svg#icon-close-mobile-menu"></use>
+            </svg>
+         </button>
+         <div class="menu-mobil__container">
+            <nav>
+               <ul class="mobile__list list">
+                  <li class="mobile__item" data-mobile-menu-close><a class="link" href="#courses">
+                        <p>Courses</p>
+                     </a></li>
+                  <li class="mobile__item" data-mobile-menu-close><a class="link" href="#about">
+                        <p>About</p>
+                     </a></li>
+                  <li class="mobile__item" data-mobile-menu-close><a class="link" href="#services">
+                        <p>Services</p>
+                     </a></li>
+                  <li class="mobile__item" data-mobile-menu-close><a class="link" href="#events">
+                        <p>Events</p>
+                     </a></li>
+                  <li class="mobile__item" data-mobile-menu-close><a class="link" href="#blog">
+                        <p>Blog</p>
+                     </a></li>
+               </ul>
+            </nav>
+            <!-- <nav class="navigator">
+               <ul class="list">
+                  <li class="navigator__item">
+                     <a class="navigator__link link" href="#courses">
+                        <p>Courses</p>
+                     </a>
+                  </li>
+                  <li class="navigator__item">
+                     <a class="navigator__link link" href="#about">
+                        <p>About</p>
+                     </a>
+                  </li>
+                  <li class="navigator__item">
+                     <a class="navigator__link link" href="#services">
+                        <p>Services</p>
+                     </a>
+                  </li>
+                  <li class="navigator__item">
+                     <a class="navigator__link link" href="#events">
+                        <p>Events</p>
+                     </a>
+                  </li>
+                  <li class="navigator__item">
+                     <a class="navigator__link link" href="#blog">
+                        <p>Blog</p>
+                     </a>
+                  </li>
+               </ul>
+            </nav> -->
+            <div class="contact__container">
+               <ul class="contact__list list">
+                  <li class="contact__item">
+                     <a href="tel:12023580001" class="link">
+                        <p>1-202-358-0001</p>
+                     </a>
+                  </li>
+                  <li class="contact__item">
+                     <a href="hqnews-join@newsletters.nasa.gov" class="link">
+                        <p>hqnews-join@newsletters.nasa.gov</p>
+                     </a>
+                  </li>
+                  <li class="contact__item">
+                     <a class="link" href="https://goo.gl/maps/wbUcTo47UnKSqVHw6" target="_blank"
+                        rel="noopener noreferre">
+                        <p>300 E St SW, Washington, DC 20546, USA</p>
+                     </a>
+                  </li>
+
+               </ul>
+               <ul class="social list">
+                  <li class="social__item">
+                     <a class="link social__icon icon-style" href="https://www.facebook.com">
+                        <svg width="9,33" height="16">
+                           <use href="./images/svg/all-icons.svg#icon-facebook"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social__item ">
+                     <a class="link social__icon icon-style" href="https://www.twitter.com">
+                        <svg width="16" height="13">
+                           <use href="./images/svg/all-icons.svg#icon-twitter"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social__item">
+                     <a class="link social__icon icon-style" href="https://www.instagram.com">
+                        <svg width="16" height="16">
+                           <use href="./images/svg/all-icons.svg#icon-instagram"></use>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+               <!-- <ul class="social list">
+                  <li class="social__item">
+                     <a href="" class="social__link link">Instagram</a>
+                  </li>
+                  <li class="social__item">
+                     <span class="social__line link"></span>
+                  </li>
+                  <li class="social__item">
+                     <a href="" class="social__link link">Twitter</a>
+                  </li>
+                  <li class="social__item">
+                     <span class="social__line link"></span>
+                  </li>
+                  <li class="social__item">
+                     <a href="" class="social__link link">Facebook</a>
+                  </li>
+                  <li class="social__item">
+                     <span class="social__line link"></span>
+                  </li>
+               </ul> -->
+            </div>
+         </div>
+      </div>
+
    </header>
 
    <mein>
 
       <!-----  hero ----->
 
-      <section class="hero">
+      <!-- <section class="hero">
          <div class="container hero__background-img">
             <div class="hero__flex">
                <div class="hero__content">
@@ -65,7 +219,24 @@
                   <p class="color">Education is the process of facilitating learning, or the acquisition of knowledge,
                      skills, values,
                      morals.</p>
-                  <button class="btn btn-hero">Courses</button>
+                  <a href="./error.html" class="btn btn-hero link">Courses</a>
+               </div>
+               <div class="hero__img"></div>
+            </div>
+         </div>
+      </section> -->
+
+      <section class="hero container">
+         <div class="grid-item">
+            <div class="hero__grid">
+               <div class="hero__content">
+                  <h2>MODERN</h2>
+                  <h1 class="hero__title">Education
+                     Academy</h1>
+                  <p class="color">Education is the process of facilitating learning, or the acquisition of knowledge,
+                     skills, values,
+                     morals.</p>
+                  <a href="./error.html" class="btn btn-hero link">Courses</a>
                </div>
                <div class="hero__img"></div>
             </div>
@@ -74,53 +245,112 @@
 
       <!---- categories ---->
 
-      <section class="categories">
+      <!-- <section class="categories">
          <div class="container categories__background-img">
             <h2>Explore Now</h2>
             <h3 class="categories__title">Categories</h3>
             <p class="categories__text">Educational methods include teaching, training, storytelling, discussion and
                directed research.</p>
             <ul class="categories__list list">
-               <li class="categories__item">
-                  <div class="categories__icon icon-style">
-                     <svg width="38" height="38">
-                        <use href="./images/svg/all-icons.svg#icon-categories-math"></use>
-                     </svg>
-                  </div>
-                  <h5>Math</h5>
+               <li class="categories__item math-background">
+                  <a href="./error.html" class="link categories__link">
+                     <div class="categories__icon icon-style">
+                        <svg width="38" height="38">
+                           <use href="./images/svg/all-icons.svg#icon-categories-math"></use>
+                        </svg>
+                     </div>
+                     <h5>Math</h5>
+                  </a>
                </li>
-               <li class="categories__item">
-                  <div class="categories__icon icon-style">
-                     <svg width="42" height="48">
-                        <use href="./images/svg/all-icons.svg#icon-categories-physics"></use>
-                     </svg>
-                  </div>
-                  <h5>Physics</h5>
+               <li class="categories__item Physics-background">
+                  <a href="./error.html" class="link categories__link">
+                     <div class="categories__icon icon-style">
+                        <svg width="42" height="48">
+                           <use href="./images/svg/all-icons.svg#icon-categories-physics"></use>
+                        </svg>
+                     </div>
+                     <h5>Physics</h5>
+                  </a>
                </li>
-               <li class="categories__item">
-                  <div class="categories__icon icon-style">
-                     <svg width="32" height="42">
-                        <use href="./images/svg/all-icons.svg#icon-categories-chemistry"></use>
-                     </svg>
-                  </div>
-                  <h5>Сhemistry</h5>
+               <li class="categories__item Сhemistry-background">
+                  <a href="./error.html" class="link categories__link">
+                     <div class="categories__icon icon-style">
+                        <svg width="32" height="42">
+                           <use href="./images/svg/all-icons.svg#icon-categories-chemistry"></use>
+                        </svg>
+                     </div>
+                     <h5>Сhemistry</h5>
+                  </a>
                </li>
-               <li class="categories__item">
-                  <div class="categories__icon icon-style">
-                     <svg width="38" height="38">
-                        <use href="./images/svg/all-icons.svg#icon-categories-informatics"></use>
-                     </svg>
-                  </div>
-                  <h5>Informatics</h5>
+               <li class="categories__item Informatics-background">
+                  <a href="./error.html" class="link categories__link">
+                     <div class="categories__icon icon-style">
+                        <svg width="38" height="38">
+                           <use href="./images/svg/all-icons.svg#icon-categories-informatics"></use>
+                        </svg>
+                     </div>
+                     <h5>Informatics</h5>
+                  </a>
                </li>
             </ul>
-            <button class="btn">Explore All</button>
+            <a href="./error.html" class="btn btn__center link">Explore All</a>
+         </div>
+      </section> -->
+      <section class="categories container">
+         <div class="grid-item">
+            <h2>Explore Now</h2>
+            <h3 class="categories__title">Categories</h3>
+            <p class="categories__text">Educational methods include teaching, training, storytelling, discussion and
+               directed research.</p>
+            <ul class="categories__list list">
+               <li class="categories__item math-background">
+                  <a href="./error.html" class="link categories__link">
+                     <div class="categories__icon icon-style">
+                        <svg width="38" height="38">
+                           <use href="./images/svg/all-icons.svg#icon-categories-math"></use>
+                        </svg>
+                     </div>
+                     <h5>Math</h5>
+                  </a>
+               </li>
+               <li class="categories__item Physics-background">
+                  <a href="./error.html" class="link categories__link">
+                     <div class="categories__icon icon-style">
+                        <svg width="42" height="48">
+                           <use href="./images/svg/all-icons.svg#icon-categories-physics"></use>
+                        </svg>
+                     </div>
+                     <h5>Physics</h5>
+                  </a>
+               </li>
+               <li class="categories__item Сhemistry-background">
+                  <a href="./error.html" class="link categories__link">
+                     <div class="categories__icon icon-style">
+                        <svg width="32" height="42">
+                           <use href="./images/svg/all-icons.svg#icon-categories-chemistry"></use>
+                        </svg>
+                     </div>
+                     <h5>Сhemistry</h5>
+                  </a>
+               </li>
+               <li class="categories__item Informatics-background">
+                  <a href="./error.html" class="link categories__link">
+                     <div class="categories__icon icon-style">
+                        <svg width="38" height="38">
+                           <use href="./images/svg/all-icons.svg#icon-categories-informatics"></use>
+                        </svg>
+                     </div>
+                     <h5>Informatics</h5>
+                  </a>
+               </li>
+            </ul>
+            <a href="./error.html" class="btn btn__center link">Explore All</a>
          </div>
       </section>
 
       <!----- coursee ----->
 
-      <section class="courses">
+      <!-- <section class="courses" id="courses">
          <div class="container">
             <h2>Courses</h2>
             <h3 class="title-for-blok">Explore Our
@@ -131,7 +361,7 @@
                   <div class="courses__img big">
                      <img src="./images/course-1.jpg" alt="">
                      <div class="courses__inside">
-                        <p class="courses__time">Math</p>
+                        <p class="courses__time math-background">Math</p>
                         <h4 class="courses__title big">Ipsum dolor sit amet
                            consectetur</h4>
                         <div class="courses__inside-content">
@@ -141,7 +371,7 @@
                            </div>
                            <div class="courses__price-btn big">
                               <p class="courses__price big">$24</p>
-                              <button class="btn btn-courses-item big btn-red">Start Now</button>
+                              <a href="./error.html" class="link btn btn-courses-item big btn-red">Start Now</a>
                            </div>
                         </div>
                      </div>
@@ -152,7 +382,7 @@
                   <div>
                      <div class="courses__img">
                         <img src="./images/course-2.jpg" alt="">
-                        <p class="courses__time">Physics</p>
+                        <p class="courses__time Physics-background">Physics</p>
                      </div>
                      <div class="courses__thumb">
                         <h4 class="courses__title">Sed do eiusmod tempor</h4>
@@ -162,7 +392,7 @@
                         </div>
                         <div class="courses__price-btn">
                            <p class="courses__price">$24</p>
-                           <button class="btn btn-courses-item">Start Now</button>
+                           <a href="./error.html" class="link btn btn-courses-item">Start Now</a>
                         </div>
                      </div>
                   </div>
@@ -172,7 +402,7 @@
                   <div>
                      <div class="courses__img">
                         <img src="./images/course-3.jpg" alt="">
-                        <p class="courses__time">Chemistry</p>
+                        <p class="courses__time Сhemistry-background">Chemistry</p>
                      </div>
                      <div class="courses__thumb">
                         <h4 class="courses__title">Labore et dolore magna</h4>
@@ -182,7 +412,7 @@
                         </div>
                         <div class="courses__price-btn">
                            <p class="courses__price">$15</p>
-                           <button class="btn btn-courses-item">Start Now</button>
+                           <a href="./error.html" class="link btn btn-courses-item">Start Now</a>
                         </div>
                      </div>
                   </div>
@@ -192,7 +422,7 @@
                   <div>
                      <div class="courses__img">
                         <img src="./images/course-4.jpg" alt="">
-                        <p class="courses__time">Informatics</p>
+                        <p class="courses__time Informatics-background">Informatics</p>
                      </div>
                      <div class="courses__thumb">
                         <h4 class="courses__title">Commodo consequat</h4>
@@ -202,7 +432,7 @@
                         </div>
                         <div class="courses__price-btn">
                            <p class="courses__price">$7</p>
-                           <button class="btn btn-courses-item">Start Now</button>
+                           <a href="./error.html" class="link btn btn-courses-item ">Start Now</a>
                         </div>
                      </div>
                   </div>
@@ -212,7 +442,7 @@
                   <div>
                      <div class="courses__img">
                         <img src="./images/course-5.jpg" alt="">
-                        <p class="courses__time">Math</p>
+                        <p class="courses__time math-background">Math</p>
                      </div>
                      <div class="courses__thumb">
                         <h4 class="courses__title">Ullamco laboris nisi ut aliquip</h4>
@@ -222,7 +452,7 @@
                         </div>
                         <div class="courses__price-btn">
                            <p class="courses__price">$30</p>
-                           <button class="btn btn-courses-item">Start Now</button>
+                           <a href="./error.html" class="link btn btn-courses-item ">Start Now</a>
                         </div>
                      </div>
                   </div>
@@ -232,7 +462,7 @@
                   <div>
                      <div class="courses__img">
                         <img src="./images/course-6.jpg" alt="">
-                        <p class="courses__time">Chemistry</p>
+                        <p class="courses__time Сhemistry-background">Chemistry</p>
                      </div>
                      <div class="courses__thumb">
                         <h4 class="courses__title">Quis nostrud exercitation</h4>
@@ -242,7 +472,7 @@
                         </div>
                         <div class="courses__price-btn">
                            <p class="courses__price">$22</p>
-                           <button class="btn btn-courses-item">Start Now</button>
+                           <a href="./error.html" class="link btn btn-courses-item">Start Now</a>
                         </div>
                      </div>
                   </div>
@@ -252,7 +482,7 @@
                   <div>
                      <div class="courses__img">
                         <img src="./images/course-7.jpg" alt="">
-                        <p class="courses__time">Math</p>
+                        <p class="courses__time math-background">Math</p>
                      </div>
                      <div class="courses__thumb">
                         <h4 class="courses__title">Enim ad minim veniam</h4>
@@ -262,21 +492,174 @@
                         </div>
                         <div class="courses__price-btn">
                            <p class="courses__price">$18</p>
-                           <button class="btn btn-courses-item">Start Now</button>
+                           <a href="./error.html" class="link btn btn-courses-item">Start Now</a>
                         </div>
                      </div>
                   </div>
                </li>
 
             </ul>
-            <button class="btn btn-courses">All Courses</button>
+            <a href="./error.html" class="link btn btn-courses">All Courses</a>
+         </div>
+      </section> -->
+
+      <section class="courses container" id="courses">
+         <div class="grid-item">
+            <h2>Courses</h2>
+            <h3 class="title-for-blok">Explore Our
+               Courses</h3>
+            <ul class="courses__list list">
+
+               <li class="courses__item big">
+                  <div class="courses__img big">
+                     <img src="./images/course-1.jpg" alt="">
+                     <div class="courses__inside big">
+                        <p class="courses__time big math-background">Math</p>
+                        <h4 class="courses__title big">Ipsum dolor sit amet
+                           consectetur</h4>
+                        <div class="courses__inside-content big">
+                           <div class="courses__ava-name big">
+                              <img class="courses__ava" src="./images/course-ava-1.png" alt="">
+                              <p class="courses__name big">Donat Twerski</p>
+                           </div>
+                           <div class="courses__price-btn big">
+                              <p class="courses__price big">$24</p>
+                              <a href="./error.html" class="link btn btn-courses-item big btn-red">Start Now</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+
+               <li class="courses__item">
+                  <div>
+                     <div class="courses__img">
+                        <img src="./images/course-2.jpg" alt="">
+                        <p class="courses__time Physics-background">Physics</p>
+                     </div>
+                     <div class="courses__thumb">
+                        <h4 class="courses__title">Sed do eiusmod tempor</h4>
+                        <div class="courses__ava-name">
+                           <img class="courses__ava" src="./images/course-ava-2.png" alt="">
+                           <p class="courses__name">Ohta Kin</p>
+                        </div>
+                        <div class="courses__price-btn">
+                           <p class="courses__price">$24</p>
+                           <a href="./error.html" class="link btn btn-courses-item">Start Now</a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+
+               <li class="courses__item">
+                  <div>
+                     <div class="courses__img">
+                        <img src="./images/course-3.jpg" alt="">
+                        <p class="courses__time Сhemistry-background">Chemistry</p>
+                     </div>
+                     <div class="courses__thumb">
+                        <h4 class="courses__title">Labore et dolore magna</h4>
+                        <div class="courses__ava-name">
+                           <img class="courses__ava" src="./images/course-ava-3.png" alt="">
+                           <p class="courses__name">Alicia Puma</p>
+                        </div>
+                        <div class="courses__price-btn">
+                           <p class="courses__price">$15</p>
+                           <a href="./error.html" class="link btn btn-courses-item">Start Now</a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+
+               <li class="courses__item">
+                  <div>
+                     <div class="courses__img">
+                        <img src="./images/course-4.jpg" alt="">
+                        <p class="courses__time Informatics-background">Informatics</p>
+                     </div>
+                     <div class="courses__thumb">
+                        <h4 class="courses__title">Commodo consequat</h4>
+                        <div class="courses__ava-name">
+                           <img class="courses__ava" src="./images/course-ava-4.png" alt="">
+                           <p class="courses__name">Francisco Maia</p>
+                        </div>
+                        <div class="courses__price-btn">
+                           <p class="courses__price">$7</p>
+                           <a href="./error.html" class="link btn btn-courses-item ">Start Now</a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+
+               <li class="courses__item">
+                  <div>
+                     <div class="courses__img">
+                        <img src="./images/course-5.jpg" alt="">
+                        <p class="courses__time math-background">Math</p>
+                     </div>
+                     <div class="courses__thumb">
+                        <h4 class="courses__title">Ullamco laboris nisi ut aliquip</h4>
+                        <div class="courses__ava-name">
+                           <img class="courses__ava" src="./images/course-ava-5.png" alt="">
+                           <p class="courses__name">Yolanda Barrueco</p>
+                        </div>
+                        <div class="courses__price-btn">
+                           <p class="courses__price">$30</p>
+                           <a href="./error.html" class="link btn btn-courses-item ">Start Now</a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+
+               <li class="courses__item">
+                  <div>
+                     <div class="courses__img">
+                        <img src="./images/course-6.jpg" alt="">
+                        <p class="courses__time Сhemistry-background">Chemistry</p>
+                     </div>
+                     <div class="courses__thumb">
+                        <h4 class="courses__title">Quis nostrud exercitation</h4>
+                        <div class="courses__ava-name">
+                           <img class="courses__ava" src="./images/course-ava-6.png" alt="">
+                           <p class="courses__name">Edward Lindgren</p>
+                        </div>
+                        <div class="courses__price-btn">
+                           <p class="courses__price">$22</p>
+                           <a href="./error.html" class="link btn btn-courses-item">Start Now</a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+
+               <li class="courses__item">
+                  <div>
+                     <div class="courses__img">
+                        <img src="./images/course-7.jpg" alt="">
+                        <p class="courses__time math-background">Math</p>
+                     </div>
+                     <div class="courses__thumb">
+                        <h4 class="courses__title">Enim ad minim veniam</h4>
+                        <div class="courses__ava-name">
+                           <img class="courses__ava" src="./images/course-ava-7.png" alt="">
+                           <p class="courses__name">Joslin Rodgers</p>
+                        </div>
+                        <div class="courses__price-btn">
+                           <p class="courses__price">$18</p>
+                           <a href="./error.html" class="link btn btn-courses-item">Start Now</a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+
+            </ul>
+            <a href="./error.html" class="link btn btn-courses">All Courses</a>
          </div>
       </section>
 
       <!-- -- about -- -->
 
-      <section class="about">
-         <div class="container">
+      <!-- <section class="about" id="about">
+         <div class="grid-item">
             <div class="about__hero">
                <img class="about__img" src="./images/about-img.jpg">
                <div class="about__hero-text">
@@ -289,7 +672,48 @@
                      directed
                      research.
                   </p>
-                  <button class="btn btn-about">About Us</button>
+                  <a href="./error.html" class="link btn btn-about">About Us</a>
+               </div>
+            </div>
+            <ul class="about__list list">
+               <li class="about__item">
+                  <h3 class="about__position-path">42<span class="about__path">+</span></h3>
+                  <h5>Duis Aute Irure</h5>
+                  <p class="color">Cillum dolore</p>
+               </li>
+               <li class="about__item">
+                  <h3 class="about__position-path">73<span class="about__path">%</span></h3>
+                  <h5>Dolor in Reprehenderit</h5>
+                  <p class="color">Fugiat nulla</p>
+               </li>
+               <li class="about__item">
+                  <h3 class="about__position-path">50<span class="about__path">.000</span></h3>
+                  <h5>Voluptate Velit Esse</h5>
+                  <p class="color">Excepteur sint</p>
+               </li>
+            </ul>
+         </div>
+      </section> -->
+
+      <section class="about container" id="about">
+         <div class="grid-item">
+            <div class="about__hero">
+               <div class="about__img">
+                  <div class="about__img-child">
+                     <img src="./images/about-img.jpg">
+                  </div>
+               </div>
+               <div class="about__hero-text">
+                  <h2>About</h2>
+                  <h3>Success Can
+                     Be Achieved</h3>
+                  <p class="strong-text margin-from-btn-h3">Beliefs, and habits. Educational methods include teaching,
+                     training,
+                     storytelling, discussion and
+                     directed
+                     research.
+                  </p>
+                  <a href="./error.html" class="link btn btn-about">About Us</a>
                </div>
             </div>
             <ul class="about__list list">
@@ -314,8 +738,8 @@
 
       <!-- --- learn-easy ------>
 
-      <section class="learn-easy">
-         <div class="container learn-easy__flex">
+      <section class="learn-easy container">
+         <div class="grid-item learn-easy__flex">
             <h2>Learn Easy</h2>
             <h3 class="title-for-blok">How We Work</h3>
             <ul class="learn-easy__list list">
@@ -355,9 +779,9 @@
 
       <!----- feature ----->
 
-      <section class="feature">
-         <div class="container">
-            <div class="feature__flex">
+      <section class="feature container">
+         <div class="grid-item">
+            <div class="feature__grid">
                <div class="feature__text">
                   <h2>Feature</h2>
                   <h3>Lead and Utilize
@@ -366,11 +790,17 @@
                      acquisition of
                      knowledge, skills, values,
                      morals, beliefs, andhabits.</p>
-                  <button class="btn">All Features</button>
+                  <button data-trigger="false" data-text="All Features" class="btn" data-Btn type="button"
+                     data-featureBtn data-focusBtn>All Features</button>
                </div>
-               <div class="feature__img"><img src="./images/feature-img.jpg" alt=""></div>
+               <div class="feature__img">
+                  <div class="feature__img-child">
+                     <img src="./images/feature-img.jpg" alt="">
+                  </div>
+               </div>
             </div>
             <ul class="feature__list list">
+
                <li class="feature__item">
                   <div class="feature__icon icon-style"><svg width="48" heigth="48">
                         <use href="./images/svg/all-icons.svg#icon-feature-managing"></use>
@@ -379,6 +809,7 @@
                      Courses</h4>
                   <p class="color">Good education is very important for all of us.</p>
                </li>
+
                <li class="feature__item">
                   <div class="feature__icon icon-style"><svg width="38" heigth="48">
                         <use href="./images/svg/all-icons.svg#icon-feature-messaging"></use>
@@ -387,6 +818,7 @@
                      Notifications</h4>
                   <p class="color">It facilitates quality learning all through.</p>
                </li>
+
                <li class="feature__item">
                   <div class="feature__icon icon-style">
                      <svg width="38" heigth="48">
@@ -397,6 +829,7 @@
                      Calendar</h4>
                   <p class="color">Life among people of any age group, cast, creed.</p>
                </li>
+
                <li class="feature__item">
                   <div class="feature__icon icon-style"><svg width="48" heigth="48">
                         <use href="./images/svg/all-icons.svg#icon-feature-course-management">
@@ -407,17 +840,56 @@
                      Management</h4>
                   <p class="color">Process of achieving knowledge, values.</p>
                </li>
+
+               <li class="feature__item is-hidden" data-allFeature>
+                  <div class="feature__icon icon-style"><svg width="48" heigth="48">
+                        <use href="./images/svg/all-icons.svg#icon-feature-managing"></use>
+                     </svg></div>
+                  <h4>Managing<br>
+                     Courses</h4>
+                  <p class="color">Good education is very important for all of us.</p>
+               </li>
+
+               <li class="feature__item is-hidden" data-allFeature>
+                  <div class="feature__icon icon-style"><svg width="48" heigth="48">
+                        <use href="./images/svg/all-icons.svg#icon-feature-managing"></use>
+                     </svg></div>
+                  <h4>Managing<br>
+                     Courses</h4>
+                  <p class="color">Good education is very important for all of us.</p>
+               </li>
+
+               <li class="feature__item is-hidden" data-allFeature>
+                  <div class="feature__icon icon-style"><svg width="48" heigth="48">
+                        <use href="./images/svg/all-icons.svg#icon-feature-managing"></use>
+                     </svg></div>
+                  <h4>Managing<br>
+                     Courses</h4>
+                  <p class="color">Good education is very important for all of us.</p>
+               </li>
+
+               <li class="feature__item is-hidden" data-allFeature>
+                  <div class="feature__icon icon-style"><svg width="48" heigth="48">
+                        <use href="./images/svg/all-icons.svg#icon-feature-managing"></use>
+                     </svg></div>
+                  <h4>Managing<br>
+                     Courses</h4>
+                  <p class="color">Good education is very important for all of us.</p>
+               </li>
+
             </ul>
          </div>
       </section>
 
       <!------ service ------>
 
-      <section class="service">
-         <div class="container service__flex">
-            <div class="service__hero-flex">
+      <section class="service container" id="services">
+         <div class="grid-item">
+            <div class="service__hero-grid">
                <div class="service__img">
-                  <img src="./images/sevice-big.jpg" alt="" width="400" height="375">
+                  <div class="service__img-child">
+                     <img src="./images/sevice-big.jpg" alt="" width="400" height="375">
+                  </div>
                </div>
                <div class="service__text">
                   <h2>Service</h2>
@@ -428,7 +900,7 @@
                      quality learning all
                      through the life
                      among people.</p>
-                  <button class="btn">All Service</button>
+                  <a class="btn link" href="./error.html">All Service</a>
                </div>
             </div>
             <ul class="service__list list">
@@ -438,7 +910,7 @@
                      </svg></div>
                   <h4>Learning</h4>
                   <p class="color">Proper and good education is very important for all of us.</p>
-                  <a class="link" href="">
+                  <a class="link" href="./error.html">
                      <p>Learn More</p>
                   </a>
                </li>
@@ -448,7 +920,7 @@
                      </svg></div>
                   <h4>Schedules</h4>
                   <p class="color">It facilitates quality learning all through the life among people.</p>
-                  <a class="link" href="">
+                  <a class="link" href="./error.html">
                      <p>Get Started</p>
                   </a>
                </li>
@@ -458,19 +930,19 @@
                      </svg></div>
                   <h4>Communities</h4>
                   <p class="color">Process of achieving knowledge, values, skills, beliefs.</p>
-                  <a class="link" href="">
+                  <a class="link" href="./error.html">
                      <p>Discover Now</p>
                   </a>
                </li>
             </ul>
-            <button class="btn">All Service</button>
+            <a href="./error.html" class="link btn">All Service</a>
          </div>
       </section>
 
       <!------ get-started ------>
 
-      <section class="get-started">
-         <div class="container">
+      <section class="get-started container">
+         <div class="grid-item">
             <div class="get-started__box">
                <div class="get-started__text">
                   <h3 class="color-get-started">Find Your Course</h3>
@@ -478,15 +950,15 @@
                      thing
                      that gives knowledge.</p>
                </div>
-               <button class="btn btn-red">Get Started</button>
+               <a href="./error.html" class="link btn btn-red">Get Started</a>
             </div>
          </div>
       </section>
 
       <!------- events ------>
 
-      <section class="events">
-         <div class="container events__flex">
+      <section class="events container" id="events">
+         <div class="grid-item events__flex">
             <h2>Events</h2>
             <h3 class="title-for-blok">Outstanding
                Events</h3>
@@ -495,7 +967,7 @@
                <li class="events__item">
                   <div class="events__position">
                      <img src="./images/events-1.jpg" alt="" class="events__img">
-                     <p>Math</p>
+                     <p class="math-background">Math</p>
                   </div>
                   <div class="events__content">
                      <div class="events__text-blok">
@@ -510,7 +982,7 @@
                <li class="events__item">
                   <div class="events__position">
                      <img src="./images/events-2.jpg" alt="" class="events__img">
-                     <p>Physics</p>
+                     <p class="Physics-background">Physics</p>
                   </div>
                   <div class="events__content">
                      <div class="events__text-blok">
@@ -525,7 +997,99 @@
                <li class="events__item">
                   <div class="events__position">
                      <img src="./images/events-3.jpg" alt="" class="events__img">
-                     <p>Informatics</p>
+                     <p class="Informatics-background">Informatics</p>
+                  </div>
+                  <div class="events__content">
+                     <div class="events__text-blok">
+                        <h4>Sunt in Culpa</h4>
+                        <p class="color events__text"><span class="events__icon"></span>17 April, 2020 | 4:00pm -
+                           11:00pm
+                        </p>
+                     </div>
+                     <button class="btn btn-events" type="button">enroll</button>
+                  </div>
+               </li>
+
+               <li class="events__item is-hidden" data-allEvents>
+                  <div class="events__position">
+                     <img src="./images/events-1.jpg" alt="" class="events__img">
+                     <p class="math-background">Math</p>
+                  </div>
+                  <div class="events__content">
+                     <div class="events__text-blok">
+                        <h4>Occaecat Cupidatat</h4>
+                        <p class="color events__text"><span class="events__icon"></span>5 April, 2020 | 3:00pm - 7:00pm
+                        </p>
+                     </div>
+                     <button class="btn btn-events">enroll</button>
+                  </div>
+               </li>
+
+               <li class="events__item is-hidden" data-allEvents>
+                  <div class="events__position">
+                     <img src="./images/events-2.jpg" alt="" class="events__img">
+                     <p class="Physics-background">Physics</p>
+                  </div>
+                  <div class="events__content">
+                     <div class="events__text-blok">
+                        <h4>Non Proident</h4>
+                        <p class="color events__text"><span class="events__icon"></span>10 April, 2020 | 1:00pm - 5:00pm
+                        </p>
+                     </div>
+                     <button class="btn btn-events">enroll</button>
+                  </div>
+               </li>
+
+               <li class="events__item is-hidden" data-allEvents>
+                  <div class="events__position">
+                     <img src="./images/events-3.jpg" alt="" class="events__img">
+                     <p class="Informatics-background">Informatics</p>
+                  </div>
+                  <div class="events__content">
+                     <div class="events__text-blok">
+                        <h4>Sunt in Culpa</h4>
+                        <p class="color events__text"><span class="events__icon"></span>17 April, 2020 | 4:00pm -
+                           11:00pm
+                        </p>
+                     </div>
+                     <button class="btn btn-events" type="button">enroll</button>
+                  </div>
+               </li>
+
+               <li class="events__item is-hidden" data-allEvents>
+                  <div class="events__position">
+                     <img src="./images/events-1.jpg" alt="" class="events__img">
+                     <p class="math-background">Math</p>
+                  </div>
+                  <div class="events__content">
+                     <div class="events__text-blok">
+                        <h4>Occaecat Cupidatat</h4>
+                        <p class="color events__text"><span class="events__icon"></span>5 April, 2020 | 3:00pm - 7:00pm
+                        </p>
+                     </div>
+                     <button class="btn btn-events">enroll</button>
+                  </div>
+               </li>
+
+               <li class="events__item is-hidden" data-allEvents>
+                  <div class="events__position">
+                     <img src="./images/events-2.jpg" alt="" class="events__img">
+                     <p class="Physics-background">Physics</p>
+                  </div>
+                  <div class="events__content">
+                     <div class="events__text-blok">
+                        <h4>Non Proident</h4>
+                        <p class="color events__text"><span class="events__icon"></span>10 April, 2020 | 1:00pm - 5:00pm
+                        </p>
+                     </div>
+                     <button class="btn btn-events">enroll</button>
+                  </div>
+               </li>
+
+               <li class="events__item is-hidden" data-allEvents>
+                  <div class="events__position">
+                     <img src="./images/events-3.jpg" alt="" class="events__img">
+                     <p class="Informatics-background">Informatics</p>
                   </div>
                   <div class="events__content">
                      <div class="events__text-blok">
@@ -539,15 +1103,16 @@
                </li>
 
             </ul>
-            <button class="btn" type="button">All
+            <button data-trigger="false" data-text="All Events" class="btn btn__center" data-Btn data-eventsBtn
+               type="button" data-focusBtn>All
                Events</button>
          </div>
       </section>
 
       <!------ slider-team ------>
 
-      <section class="slider-team">
-         <div class="container">
+      <section class="slider-team container">
+         <div class="grid-item">
             <h2>Our Team</h2>
             <h3 class="title-for-blok">Best Teachers</h3>
 
@@ -555,7 +1120,7 @@
                <div class="swiper-wrapper slider-tiam__list">
 
                   <div class="slider-team__item swiper-slide">
-                     <a href="" class="slide-team__img">
+                     <a href="https://www.facebook.com/zuck/" class="slide-team__img">
                         <img src="./images/team-1.png" alt="">
                         <div>
                            <div class="link slider-team__icon icon-style">
@@ -572,7 +1137,7 @@
                   </div>
 
                   <div class="slider-team__item swiper-slide">
-                     <a href="" class="slide-team__img">
+                     <a href="https://www.facebook.com/zuck/" class="slide-team__img">
                         <img src="./images/team-2.png" alt="">
                         <div>
                            <div class="link slider-team__icon icon-style">
@@ -589,7 +1154,7 @@
                   </div>
 
                   <div class="slider-team__item swiper-slide">
-                     <a href="" class="slide-team__img">
+                     <a href="https://www.facebook.com/zuck/" class="slide-team__img">
                         <img src="./images/team-3.png" alt="">
                         <div>
                            <div class="link slider-team__icon icon-style">
@@ -606,7 +1171,7 @@
                   </div>
 
                   <div class="slider-team__item swiper-slide">
-                     <a href="" class="slide-team__img">
+                     <a href="https://www.facebook.com/zuck/" class="slide-team__img">
                         <img src="./images/team-4.png" alt="">
                         <div>
                            <div class="link slider-team__icon icon-style">
@@ -623,7 +1188,7 @@
                   </div>
 
                   <div class="slider-team__item swiper-slide">
-                     <a href="" class="slide-team__img">
+                     <a href="https://www.facebook.com/zuck/" class="slide-team__img">
                         <img src="./images/team-1.png" alt="">
                         <div>
                            <div class="link slider-team__icon icon-style">
@@ -640,7 +1205,7 @@
                   </div>
 
                   <div class="slider-team__item swiper-slide">
-                     <a href="" class="slide-team__img">
+                     <a href="https://www.facebook.com/zuck/" class="slide-team__img">
                         <img src="./images/team-2.png" alt="">
                         <div>
                            <div class="link slider-team__icon icon-style">
@@ -657,7 +1222,7 @@
                   </div>
 
                   <div class="slider-team__item swiper-slide">
-                     <a href="" class="slide-team__img">
+                     <a href="https://www.facebook.com/zuck/" class="slide-team__img">
                         <img src="./images/team-3.png" alt="">
                         <div>
                            <div class="link slider-team__icon icon-style">
@@ -674,7 +1239,7 @@
                   </div>
 
                   <div class="slider-team__item swiper-slide">
-                     <a href="" class="slide-team__img">
+                     <a href="https://www.facebook.com/zuck/" class="slide-team__img">
                         <img src="./images/team-4.png" alt="">
                         <div>
                            <div class="link slider-team__icon icon-style">
@@ -703,8 +1268,8 @@
 
       <!------ slider-say ------>
 
-      <section class="slider-say">
-         <div class="container">
+      <section class="slider-say container">
+         <div class="grid-item">
             <h2>Testimonials</h2>
             <h3 class="title-for-blok">Students Say</h3>
             <div class="twoSwiper swiper-slider-say">
@@ -713,7 +1278,7 @@
                   <div class="slider-say__item swiper-slide">
                      <div class="slider-say__icon">
                         <svg width="160" height="32">
-                           <use href="./images/svg/stars-defs.svg#icon-stars"></use>
+                           <use href="./images/svg/all-icons.svg#icon-stars"></use>
                         </svg>
                      </div>
                      <p class="slider-say__text strong-text">Education gives us a knowledge of the world around us and
@@ -729,7 +1294,7 @@
                   <div class="slider-say__item swiper-slide">
                      <div class="slider-say__icon">
                         <svg width="160" height="32">
-                           <use href="./images/svg/stars-defs.svg#icon-stars"></use>
+                           <use href="./images/svg/all-icons.svg#icon-stars"></use>
                         </svg>
                      </div>
                      <p class="slider-say__text strong-text">It develops in us a perspective of looking at life. It
@@ -745,7 +1310,7 @@
                   <div class="slider-say__item swiper-slide">
                      <div class="slider-say__icon">
                         <svg width="160" height="32">
-                           <use href="./images/svg/stars-defs.svg#icon-stars"></use>
+                           <use href="./images/svg/all-icons.svg#icon-stars"></use>
                         </svg>
                      </div>
                      <p class="slider-say__text strong-text">Build opinions and have points of view on things in life.
@@ -761,7 +1326,7 @@
                   <div class="slider-say__item swiper-slide">
                      <div class="slider-say__icon">
                         <svg width="160" height="32">
-                           <use href="./images/svg/stars-defs.svg#icon-stars"></use>
+                           <use href="./images/svg/all-icons.svg#icon-stars"></use>
                         </svg>
                      </div>
                      <p class="slider-say__text strong-text">Education gives us a knowledge of the world around us and
@@ -777,7 +1342,7 @@
                   <div class="slider-say__item swiper-slide">
                      <div class="slider-say__icon">
                         <svg width="160" height="32">
-                           <use href="./images/svg/stars-defs.svg#icon-stars"></use>
+                           <use href="./images/svg/all-icons.svg#icon-stars"></use>
                         </svg>
                      </div>
                      <p class="slider-say__text strong-text">It develops in us a perspective of looking at life. It
@@ -801,57 +1366,63 @@
 
       <!------- faq ------>
 
-      <section class="faq">
-         <div class="container">
+      <section class="faq container">
+         <div class="grid-item faq__grid">
             <h2>FAQ</h2>
             <h3>Frequently Asked
                Questions</h3>
-            <ul class="faq__list list">
-               <li class="faq__item">
-                  <div class="faq__item-title">
-                     <h4>What is the common feature of learning?</h4>
-                     <div class="faq__icon icon-style">
+            <div class="faq__position_list">
+               <ul class="faq__list list">
+                  <li class="faq__item">
+                     <div class="faq__item-title">
+                        <h4>What is the common feature of learning?</h4>
+                        <div class="faq__icon icon-style">
+                        </div>
                      </div>
-                  </div>
-                  <p class="color faq__slaide-text faq__dalay">Education gives us a knowledge of the world around us and
-                     changes it
-                     into something
-                     better. It develops in us a perspective of looking at life. It helps us build opinions and have
-                     points of view on things in life.</p>
-               </li>
-               <li class="faq__item">
-                  <div class="faq__item-title">
-                     <h4>What do we mean by education?</h4>
-                     <div class="faq__icon icon-style">
-                     </div>
-                  </div>
-                  <p class="color faq__slaide-text faq__dalay">Education gives us a knowledge of the world around us and
-                     changes it
-                     into something
-                     better. It develops in us a perspective of looking at life. It helps us build opinions and have
-                     points of view on things in life.</p>
-               </li>
-               <li class="faq__item" onclick="faqFunction">
-                  <div class="faq__title-check">
-                     <input type="checkbox" class="faq__check visually-hidden" name="checkbox" id="check" />
-                     <label for="check" class="faq_check-text">
-                        What are the 3 types of education?
-                     </label>
-                     <p class="color faq__slaide-text">Education gives us a knowledge of the world around us and changes
-                        it into
-                        something
+                     <p class="color faq__slaide-text faq__dalay">Education gives us a knowledge of the world around us
+                        and
+                        changes it
+                        into something
                         better. It develops in us a perspective of looking at life. It helps us build opinions and have
                         points of view on things in life.</p>
-                  </div>
-               </li>
-            </ul>
+                  </li>
+                  <li class="faq__item">
+                     <div class="faq__item-title">
+                        <h4>What do we mean by education?</h4>
+                        <div class="faq__icon icon-style">
+                        </div>
+                     </div>
+                     <p class="color faq__slaide-text faq__dalay">Education gives us a knowledge of the world around us
+                        and
+                        changes it
+                        into something
+                        better. It develops in us a perspective of looking at life. It helps us build opinions and have
+                        points of view on things in life.</p>
+                  </li>
+                  <li class="faq__item" onclick="faqFunction">
+                     <div class="faq__title-check">
+                        <input type="checkbox" class="faq__check visually-hidden" name="checkbox" id="check" />
+                        <label for="check" class="faq_check-text">
+                           What are the 3 types of education?
+                        </label>
+                        <p class="color faq__slaide-text">Education gives us a knowledge of the world around us and
+                           changes
+                           it into
+                           something
+                           better. It develops in us a perspective of looking at life. It helps us build opinions and
+                           have
+                           points of view on things in life.</p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
          </div>
       </section>
 
       <!------- blog ------->
 
-      <section class="blog">
-         <div class="container">
+      <section class="blog container" id="blog">
+         <div class="grid-item">
             <h2>Our Blog</h2>
             <h3 class="title-for-blok">Latest Articles</h3>
             <div class="blog__list">
@@ -1025,7 +1596,7 @@
                </article>
 
             </div>
-            <div class="blog-btn"><button data-trigger="false" data-text="All Blog" class="btn" data-blogsBtn
+            <div class="blog-btn"><button data-trigger="false" data-text="All Blog" class="btn" data-blogsBtn data-Btn
                   type="button" data-focusBtn>All
                   Blog</button></div>
          </div>
@@ -1033,8 +1604,8 @@
 
       <!------ download ------>
 
-      <section class="download">
-         <div class="container download__flex">
+      <section class="download container">
+         <div class="grid-item download__flex">
             <div class="download__text">
                <h2>Download</h2>
                <h3>Download<br> Our App</h3>
@@ -1043,8 +1614,10 @@
                   perspective of looking at
                   life.</p>
                <div class="download__app">
-                  <a class="download__apple link" href=""><img src="./images/app/app-store.png" alt="apple"></a>
-                  <a class="download__google link" href=""><img src="./images/app/google-play.png" alt="google"></a>
+                  <a class="download__apple link" href="https://www.apple.com/ua/app-store/"><img
+                        src="./images/app/app-store.png" alt="apple"></a>
+                  <a class="download__google link" href="https://play.google.com/store/apps?hl=ru&gl=US"><img
+                        src="./images/app/google-play.png" alt="google"></a>
                </div>
             </div>
             <div class="download__img">
@@ -1057,8 +1630,8 @@
 
       <!----- get-started ----->
 
-      <section class="get-started get-started--gradient">
-         <div class="container">
+      <section class="get-started get-started--gradient container">
+         <div class="grid-item">
             <div class="get-started__box">
                <div class="get-started__text">
                   <h3 class="color-get-started">Find Your Course</h3>
@@ -1066,7 +1639,7 @@
                      thing
                      that gives knowledge.</p>
                </div>
-               <button class="btn btn-red">Get Started</button>
+               <a href="./error.html" class="link btn btn-red">Get Started</a>
             </div>
          </div>
       </section>
@@ -1074,8 +1647,8 @@
 
    <!------ footer ------>
 
-   <footer class="footer">
-      <div class="container">
+   <footer class="footer container">
+      <div class="grid-item">
          <div class="footer__flex">
             <a class="logo link">
                ACA
@@ -1084,17 +1657,17 @@
                <h2>Menu</h2>
                <ul class="footer__list list">
                   <li class="footer__item">
-                     <a class="link strong-text" href="">
+                     <a class="link strong-text" href="./error.html">
                         About
                      </a>
                   </li>
                   <li class="footer__item">
-                     <a class="link strong-text" href="">
+                     <a class="link strong-text" href="./error.html">
                         Pricing
                      </a>
                   </li>
                   <li class="footer__item">
-                     <a class="link strong-text" href="">
+                     <a class="link strong-text" href="#blog">
                         Blog
                      </a>
                   </li>
@@ -1129,23 +1702,23 @@
                   </li>
                </ul>
             </div>
-            <ul class="footer__social list">
-               <li class="footer__social-item">
-                  <a class="link footer__icon icon-style" href="">
+            <ul class="social list">
+               <li class="social__item">
+                  <a class="link social__icon icon-style" href="https://www.facebook.com">
                      <svg width="9,33" height="16">
                         <use href="./images/svg/all-icons.svg#icon-facebook"></use>
                      </svg>
                   </a>
                </li>
-               <li class="footer__social-item ">
-                  <a class="link footer__icon icon-style" href="">
+               <li class="social__item ">
+                  <a class="link social__icon icon-style" href="https://www.twitter.com">
                      <svg width="16" height="13">
                         <use href="./images/svg/all-icons.svg#icon-twitter"></use>
                      </svg>
                   </a>
                </li>
-               <li class="footer__social-item">
-                  <a class="link footer__icon icon-style" href="">
+               <li class="social__item">
+                  <a class="link social__icon icon-style" href="https://www.instagram.com">
                      <svg width="16" height="16">
                         <use href="./images/svg/all-icons.svg#icon-instagram"></use>
                      </svg>
@@ -1156,10 +1729,10 @@
          <div class="footer__copyright">
             <p class="color">Copyright © 2021 Laaqiq. All Rights Reserved.</p>
             <div>
-               <a class="link" href="">
+               <a class="link" href="./error.html">
                   <p>Terms of Use</p>
                </a>
-               <a class="link" href="">
+               <a class="link" href="./error.html">
                   <p>Privacy Policy</p>
                </a>
             </div>
@@ -1169,6 +1742,24 @@
    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
    <script>
 
+      // открывает меню при нажатии одной кнопки, а закрывает либо кнопки либо пунктов меню, 
+      // плюс переносит на нужную часть сайта
+      var openMenuBtn = document.querySelector("[data-mobile-menu-open]");
+      var closeMenuBtn = document.querySelectorAll("[data-mobile-menu-close]");
+      var menu = document.querySelector("[data-mobile-menu]");
+
+      openMenuBtn.addEventListener("click", () => {
+         menu.classList.toggle('is-hidden');
+      });
+      closeMenuBtn.forEach(item => {
+         item.addEventListener('click', () => {
+            menu.classList.toggle('is-hidden');
+         });
+      })
+
+
+
+      // слайдеры.
       const oneSwiper = new Swiper(".oneSwiper", {
          navigation: {
             nextEl: ".one-next",
@@ -1205,6 +1796,43 @@
             item.blur();
          })
       })
+
+
+
+      // при нажатии на eventsBtn(кнопка) в колекции все allEvents(li.item),
+      //  в которых есть атрибут data - allEvents, убирается или появляется класс is-hidden.
+      // var events = document.querySelector('.events__list');
+      var eventsBtn = document.querySelector('[data-eventsBtn]');
+      var allEvents = document.querySelectorAll('[data-allEvents]');
+      eventsBtn.addEventListener('click', () => {
+         allEvents.forEach(item => {
+            item.classList.toggle('is-hidden');
+         })
+         var events = document.querySelector('.events__list');
+         events.classList.toggle('events__list--gorizontale');
+      });
+
+
+
+
+      // var events = document.querySelector('.events__list');
+      // var eventsSum = document.querySelector('.events__list').children.classList.contains('is-hidden').length;
+      // if (eventsSum >= 4) {
+      //    events.classList.toggle('events__list--gorizontale')
+      // }
+
+
+
+
+      // при нажатии на featureBtn(кнопка) в колекции все allFeature(li.item),
+      //  в которых есть атрибут data - allFeature, убирается или появляется класс is-hidden.
+      var featureBtn = document.querySelector('[data-featureBtn]');
+      var allFeature = document.querySelectorAll('[data-allFeature]');
+      featureBtn.addEventListener('click', () => {
+         allFeature.forEach(item => {
+            item.classList.toggle('is-hidden');
+         })
+      });
 
 
 
@@ -1277,34 +1905,34 @@
       // И data-trigger присваивается значение false. С btn не работает потомучто его много, а querySelector
       // выбирает толь одного. Можно попробовать цикл или querySelectorAll и потом forEach.
 
-      let btnText = document.querySelector('[data-blogsBtn]');
-      // let btnText = document.querySelector('.btn');
-      btnText.addEventListener('click', function () {
-         if (this.dataset.trigger == 'false') {
-            this.innerText = 'Close';
-            this.dataset.trigger = true;
-         } else {
-            this.innerText = this.dataset.text;
-            this.dataset.trigger = false;
-         }
-      });
+      // let btnText = document.querySelectorAll('[data-Btn]');
+      // // let btnText = document.querySelector('.btn');
+      // btnText.addEventListener('click', function () {
+      //    if (this.dataset.trigger == 'false') {
+      //       this.innerText = 'Close';
+      //       this.dataset.trigger = true;
+      //    } else {
+      //       this.innerText = this.dataset.text;
+      //       this.dataset.trigger = false;
+      //    }
+      // });
 
 
-   //  Делает тоже самое что и предыдущий код только для всех элементов с классом btn. 
-   // Можно подставлять другие атибуты и применить общий код для разных кнопок,
-   //  главное чтоб вторая надпись была одинакова надпись
-      // let btnText = document.querySelectorAll('.btn');
-      // btnText.forEach(item => {
-      //    item.addEventListener('click', function () {
-      //       if (this.dataset.trigger == 'false') {
-      //          this.innerText = 'Close';
-      //          this.dataset.trigger = true;
-      //       } else {
-      //          this.innerText = this.dataset.text;
-      //          this.dataset.trigger = false;
-      //       }
-      //    });
-      // })
+      //  Делает тоже самое что и предыдущий код только для всех элементов с классом btn. 
+      // Можно подставлять другие атибуты и применить общий код для разных кнопок,
+      //  главное чтоб вторая надпись была одинакова надпись
+      let btnText = document.querySelectorAll('[data-Btn]');
+      btnText.forEach(item => {
+         item.addEventListener('click', function () {
+            if (this.dataset.trigger == 'false') {
+               this.innerText = 'Close';
+               this.dataset.trigger = true;
+            } else {
+               this.innerText = this.dataset.text;
+               this.dataset.trigger = false;
+            }
+         });
+      })
 
 
 // то самое что и код выше, заменяет текст в кнопке. Только при сравнении строк нужно не забывать про регистр.

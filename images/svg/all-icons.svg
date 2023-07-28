@@ -1,5 +1,18 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
    <defs>
+      <symbol id="icon-close-mobile-menu" viewBox="0 0 32 32">
+         <path fill="#4a90e2" style="fill: var(--color1, #4a90e2)" d="M26.667 7.303l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"></path>
+      </symbol>
+      <symbol id="icon-stars" viewBox="0 0 160 32">
+         <path fill="#f8e71c" style="fill: var(--color1, #f8e71c)" d="M16 24l-9.405 4.944 1.796-10.472-7.608-7.416 10.515-1.528 4.702-9.528 4.702 9.528 10.515 1.528-7.608 7.416 1.796 10.472-9.405-4.944z"></path>
+         <path fill="#f8e71c" style="fill: var(--color1, #f8e71c)" d="M48 24l-9.405 4.944 1.796-10.472-7.608-7.416 10.515-1.528 4.702-9.528 4.702 9.528 10.515 1.528-7.608 7.416 1.796 10.472-9.405-4.944z"></path>
+         <path fill="#f8e71c" style="fill: var(--color1, #f8e71c)" d="M80 24l-9.405 4.944 1.796-10.472-7.608-7.416 10.515-1.528 4.702-9.528 4.702 9.528 10.515 1.528-7.608 7.416 1.796 10.472-9.405-4.944z"></path>
+         <path fill="#f8e71c" style="fill: var(--color1, #f8e71c)" d="M112 24l-9.405 4.944 1.797-10.472-7.609-7.416 10.515-1.528 4.702-9.528 4.702 9.528 10.515 1.528-7.609 7.416 1.797 10.472-9.405-4.944z"></path>
+         <path fill="#f8e71c" style="fill: var(--color1, #f8e71c)" d="M144 24l-9.405 4.944 1.797-10.472-7.609-7.416 10.515-1.528 4.702-9.528 4.702 9.528 10.515 1.528-7.609 7.416 1.797 10.472-9.405-4.944z"></path>
+      </symbol>
+      <symbol id="icon-menu-burger" viewBox="0 0 37 32">
+         <path fill="#4a90e2" style="fill: var(--color1, #4a90e2)" d="M0 0h36.571v4.571h-36.571v-4.571zM0 13.714h36.571v4.571h-36.571v-4.571zM36.571 27.429h-36.571v4.571h36.571v-4.571z"></path>
+      </symbol>
       <symbol id="icon-arrow-down" viewBox="0 0 32 32">
          <path fill="#4a90e2" style="fill: var(--color1, #4a90e2)" d="M32 10.048l-4.539-4.715-11.461 11.904-11.461-11.904-4.539 4.715 16 16.619 16-16.619z"></path>
       </symbol>
