@@ -1,5 +1,6 @@
 body {
   font-family: "Sora", sans-serif;
+  background-color: #fff !important;
 }
 
 .list {
@@ -29,7 +30,7 @@ picture {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.26;
-  border: 1px solid #bad6f7;
+  border: 1px solid #bad6f7 !important;
   cursor: pointer;
   text-transform: uppercase;
   border-radius: 5px;
@@ -37,7 +38,7 @@ picture {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  color: #4a90e2;
+  color: #4a90e2 !important;
   background-color: transparent;
   height: 48px;
   width: 170px;
@@ -61,19 +62,19 @@ picture {
 
 .btn:hover,
 .btn:focus {
-  border-color: #4a90e2;
+  border-color: #4a90e2 !important;
 }
 
 .btn-red {
-  background: #ff7988;
-  color: #fff;
+  background: #ff7988 !important;
+  color: #fff !important;
   border-width: 2px;
-  border-color: rgb(154, 121, 125);
+  border-color: rgb(154, 121, 125) !important;
 }
 
 .btn-red:hover,
 .btn-red:focus {
-  border-color: #ff7988;
+  border-color: #ff7988 !important;
 }
 
 /* font-size: calc(40px + 16 * (100vw / 1440)); */
@@ -84,7 +85,7 @@ h2 {
   line-height: 2;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #9497a5;
+  color: #9497a5 !important;
   margin-bottom: 25px;
   position: relative;
 }
@@ -97,7 +98,7 @@ h3 {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: -2px;
-  color: #333333;
+  color: #333333 !important;
 }
 
 .title-for-blok {
@@ -110,7 +111,7 @@ h4,
   font-size: 24px;
   font-weight: 700;
   line-height: 1.33;
-  color: #333333;
+  color: #333333 !important;
 }
 
 h5,
@@ -118,22 +119,22 @@ h5,
   font-size: 20px;
   font-weight: 400;
   line-height: 1.6;
-  color: #333333;
+  color: #333333 !important;
 }
 
 p {
   font-size: 16px;
   font-weight: 400;
   line-height: 2;
-  color: #333333;
+  color: #333333 !important;
 }
 
 .color-get-started {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .color {
-  color: rgba(51, 51, 51, 0.5);
+  color: rgba(51, 51, 51, 0.5) !important;
 }
 
 .logo {
@@ -142,7 +143,7 @@ p {
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: -1px;
-  color: #333333;
+  color: #333333 !important;
 }
 
 /* .container {
@@ -205,20 +206,20 @@ p {
 }
 
 .math-background {
-  background: rgba(227, 240, 255, 1);
+  background: rgba(227, 240, 255, 1) !important;
 }
 
 .Informatics-background {
-  background: rgba(255, 226, 229, 1);
+  background: rgba(255, 226, 229, 1) !important;
   /* background: rgba(255, 242, 222, 1); */
 }
 
 .Physics-background {
-  background: rgba(255, 242, 222, 1);
+  background: rgba(255, 242, 222, 1) !important;
 }
 
 .Сhemistry-background {
-  background: rgba(236, 255, 215, 1);
+  background: rgba(236, 255, 215, 1) !important;
 }
 
 .z-index6 {
@@ -229,7 +230,7 @@ p {
 /* --- header --- */
 
 .header {
-  background: #eaf3ff;
+  background: #eaf3ff !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -298,7 +299,7 @@ p {
   position: absolute;
   width: 50%;
   height: 8px;
-  background: #cddff7;
+  background: #cddff7 !important;
   top: 75%;
   transform: scaleX(0);
   transition: transform 250ms linear;
@@ -360,7 +361,7 @@ p {
   left: 0;
   background: no-repeat 200px 130px/27px url(../images/oval.png),
     no-repeat 370px 305px/35px url(../images/oval.png),
-    no-repeat 500px 100px/51px url(../images/oval.png), #eaf3ff;
+    no-repeat 500px 100px/51px url(../images/oval.png), #eaf3ff !important;
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -424,7 +425,7 @@ p {
 }
 
 .contact__icon svg {
-  fill: #333333;
+  fill: #333333 !important;
   transition: fill 250ms linear;
   -webkit-transition: fill 250ms linear;
   -moz-transition: fill 250ms linear;
@@ -444,15 +445,15 @@ p {
 
 .menu-mobile__list p:focus,
 .menu-mobile__list p:hover {
-  color: #4a90e2;
+  color: #4a90e2 !important;
 }
 
 .contact__item:focus svg,
 .contact__item:hover svg,
 .contact__item:focus p,
 .contact__item:hover p {
-  fill: #4a90e2;
-  color: #4a90e2;
+  fill: #4a90e2 !important;
+  color: #4a90e2 !important;
 }
 
 /* --------- contact menu --------- */
@@ -482,7 +483,7 @@ p {
   overflow: hidden;
   background: no-repeat 200px 130px/27px url(../images/oval.png),
     no-repeat 370px 305px/35px url(../images/oval.png),
-    no-repeat 500px 100px/51px url(../images/oval.png), #eaf3ff;
+    no-repeat 500px 100px/51px url(../images/oval.png), #eaf3ff !important;
   transition: transform 250ms linear;
   -webkit-transition: transform 250ms linear;
   -moz-transition: transform 250ms linear;
@@ -513,7 +514,7 @@ p {
   top: 10px;
   right: 10px;
   flex-shrink: 0;
-  background-color: #eaf3ff;
+  background-color: #eaf3ff !important;
 }
 
 .contact__address-form {
@@ -557,7 +558,7 @@ p {
   outline: none;
   width: 240px;
   height: 30px;
-  border: 1px solid #bad6f7;
+  border: 1px solid #bad6f7 !important;
   border-radius: 4px;
   padding: 0 0 0 15px;
   margin: 2px 0 0;
@@ -569,11 +570,11 @@ p {
 .form__input:hover,
 .form__text:focus,
 .form__text:hover {
-  border-color: #4a90e2;
+  border-color: #4a90e2 !important;
 }
 
 .form__label:focus-within {
-  color: #4a90e2;
+  color: #4a90e2 !important;
 }
 .form__icon {
 }
@@ -582,7 +583,7 @@ p {
   outline: none;
   width: 240px;
   height: 80px;
-  border: 1px solid #bad6f7;
+  border: 1px solid #bad6f7 !important;
   border-radius: 4px;
   padding: 10px 15px;
   resize: none;
@@ -607,12 +608,12 @@ p {
 
 .contact__line {
   height: 160%;
-  border-left: 1px solid #bad6f7;
+  border-left: 1px solid #bad6f7 !important;
 }
 @media screen and (max-width: 750px) {
   .contact__line {
     width: 110%;
-    border-top: 1px solid #bad6f7;
+    border-top: 1px solid #bad6f7 !important;
   }
 }
 
@@ -649,7 +650,7 @@ p {
     no-repeat 1360px 404px/35px url(../images/oval.png),
     no-repeat 640px 564px/27px url(../images/oval.png),
     no-repeat 370px 765px/35px url(../images/oval.png),
-    no-repeat 900px 714px/51px url(../images/oval.png), #eaf3ff;
+    no-repeat 900px 714px/51px url(../images/oval.png), #eaf3ff !important;
 }
 /* .grid-item {
   grid-column: 2/3;
@@ -673,7 +674,7 @@ p {
 .error__title {
   max-width: 486px;
   font-weight: 700;
-  color: #333333;
+  color: #333333 !important;
   font-size: calc(56px + 16 * ((100vw - 375px) / (1440 - 375)));
   /* font-size: calc(56px + 16 * (100vw / 1440)); */
   line-height: 1.11;
@@ -684,8 +685,8 @@ p {
 .btn-hero {
   margin-top: 42px;
   width: 154px;
-  background-color: #4a90e2;
-  color: #ffffff;
+  background-color: #4a90e2 !important;
+  color: #ffffff !important;
 }
 
 .hero__img {
@@ -717,7 +718,7 @@ p {
     no-repeat 1330px 235px/27px url(../images/oval.png),
     no-repeat 1045px 325px/51px url(../images/oval.png),
     no-repeat 200px 400px/35px url(../images/oval.png),
-    linear-gradient(to bottom, #eaf3ff 70%, #fff 70%);
+    linear-gradient(to bottom, #eaf3ff 70%, #fff 70%) !important;
 }
 
 @media screen and (max-width: 640px) {
