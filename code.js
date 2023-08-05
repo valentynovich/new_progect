@@ -16,7 +16,7 @@
 
 
       // открывает меню при нажатии нескольких кнопок, а закрывает одной кнопкой, 
-      
+      var body = document.querySelector("body")
       var openContactBtn = document.querySelectorAll("[data-contact-open]");
       var closeContactBtn = document.querySelector("[data-contact-close]");
       var contact = document.querySelector("[data-contact]");
@@ -24,10 +24,12 @@
       openContactBtn.forEach(item => {
          item.addEventListener('click', () => {
             contact.classList.toggle('is-hidden');
+            body.classList.toggle('overflow');
          });
       })
          closeContactBtn.addEventListener('click', () => {
             contact.classList.toggle('is-hidden');
+            body.classList.toggle('overflow');
       })
 
 

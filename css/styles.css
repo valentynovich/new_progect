@@ -2629,13 +2629,13 @@ p {
 /* --------- error page ---------- */
 
 .error__background {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
   gap: 50px;
   background: no-repeat 90% 15%/35px url(../images/oval.png),
     no-repeat 10% 30%/27px url(../images/oval.png),
@@ -2647,6 +2647,10 @@ p {
 html,
 body {
   height: 100%;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 .error__title {
