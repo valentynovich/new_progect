@@ -241,6 +241,12 @@ p {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+@media screen and (max-width: 640px) {
+  .header {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+}
 
 .container-header {
   display: grid;
@@ -259,38 +265,6 @@ p {
 
 .header__item {
   position: relative;
-}
-
-.header__item:focus.header__item::after,
-.header__item:focus.header__item::before,
-.header__item:hover.header__item::after,
-.header__item:hover.header__item::before {
-  transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  transform-origin: center;
-}
-
-.header__item:focus.header__item::after,
-.header__item:hover.header__item::after {
-  transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  transform-origin: left;
-}
-
-.header__item:focus.header__item::before,
-.header__item:hover.header__item::before {
-  transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  transform-origin: right;
 }
 
 .header__item::after,
@@ -312,6 +286,7 @@ p {
   -ms-transform: scaleX(0);
   -o-transform: scaleX(0);
 }
+
 .header__item::after {
   left: 0;
   transform-origin: left;
@@ -321,6 +296,7 @@ p {
   -ms-border-radius: 8px 0 0 8px;
   -o-border-radius: 8px 0 0 8px;
 }
+
 .header__item::before {
   transform-origin: right;
   right: 0;
@@ -329,6 +305,26 @@ p {
   -moz-border-radius: 0 8px 8px 0;
   -ms-border-radius: 0 8px 8px 0;
   -o-border-radius: 0 8px 8px 0;
+}
+
+.header__item:focus.header__item::after,
+.header__item:hover.header__item::after {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform-origin: right;
+}
+
+.header__item:focus.header__item::before,
+.header__item:hover.header__item::before {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform-origin: left;
 }
 
 .btn-header {
