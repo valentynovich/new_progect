@@ -1,6 +1,6 @@
 body {
   font-family: "Sora", sans-serif;
-  background-color: #fff !important;
+  background-color: #fff;
 }
 
 .list {
@@ -30,7 +30,7 @@ picture {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.26;
-  border: 1px solid #bad6f7 !important;
+  border: 1px solid #bad6f7;
   cursor: pointer;
   text-transform: uppercase;
   border-radius: 5px;
@@ -38,7 +38,7 @@ picture {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  color: #4a90e2 !important;
+  color: #4a90e2;
   background-color: transparent;
   height: 48px;
   width: 170px;
@@ -62,19 +62,19 @@ picture {
 
 .btn:hover,
 .btn:focus {
-  border-color: #4a90e2 !important;
+  border-color: #4a90e2;
 }
 
 .btn-red {
-  background: #ff7988 !important;
-  color: #fff !important;
+  background: #ff7988;
+  color: #fff;
   border-width: 2px;
-  border-color: rgb(154, 121, 125) !important;
+  border-color: rgb(154, 121, 125);
 }
 
 .btn-red:hover,
 .btn-red:focus {
-  border-color: #ff7988 !important;
+  border-color: #ff7988;
 }
 
 /* font-size: calc(40px + 16 * (100vw / 1440)); */
@@ -85,7 +85,7 @@ h2 {
   line-height: 2;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #9497a5 !important;
+  color: #9497a5;
   margin-bottom: 25px;
   position: relative;
 }
@@ -98,7 +98,7 @@ h3 {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: -2px;
-  color: #333333 !important;
+  color: #333333;
 }
 
 .title-for-blok {
@@ -111,7 +111,7 @@ h4,
   font-size: 24px;
   font-weight: 700;
   line-height: 1.33;
-  color: #333333 !important;
+  color: #333333;
 }
 
 h5,
@@ -119,22 +119,22 @@ h5,
   font-size: 20px;
   font-weight: 400;
   line-height: 1.6;
-  color: #333333 !important;
+  color: #333333;
 }
 
 p {
   font-size: 16px;
   font-weight: 400;
   line-height: 2;
-  color: #333333 !important;
+  color: #333333;
 }
 
 .color-get-started {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 .color {
-  color: rgba(51, 51, 51, 0.5) !important;
+  color: rgba(51, 51, 51, 0.5);
 }
 
 .logo {
@@ -143,7 +143,7 @@ p {
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: -1px;
-  color: #333333 !important;
+  color: #333333;
 }
 
 /* .container {
@@ -206,20 +206,20 @@ p {
 }
 
 .math-background {
-  background: rgba(227, 240, 255, 1) !important;
+  background: rgba(227, 240, 255, 1);
 }
 
 .Informatics-background {
-  background: rgba(255, 226, 229, 1) !important;
+  background: rgba(255, 226, 229, 1);
   /* background: rgba(255, 242, 222, 1); */
 }
 
 .Physics-background {
-  background: rgba(255, 242, 222, 1) !important;
+  background: rgba(255, 242, 222, 1);
 }
 
 .Сhemistry-background {
-  background: rgba(236, 255, 215, 1) !important;
+  background: rgba(236, 255, 215, 1);
 }
 
 .z-index6 {
@@ -230,7 +230,7 @@ p {
 /* --- header --- */
 
 .header {
-  background: #eaf3ff !important;
+  background: #eaf3ff;
   position: fixed;
   top: 0;
   left: 0;
@@ -299,7 +299,7 @@ p {
   position: absolute;
   width: 50%;
   height: 8px;
-  background: #cddff7 !important;
+  background: #cddff7;
   top: 75%;
   transform: scaleX(0);
   transition: transform 250ms linear;
@@ -359,20 +359,28 @@ p {
   z-index: 7;
   top: 0;
   left: 0;
+  padding: 60px 40px 50px 40px;
   background: no-repeat 200px 130px/27px url(../images/oval.png),
     no-repeat 370px 305px/35px url(../images/oval.png),
-    no-repeat 500px 100px/51px url(../images/oval.png), #eaf3ff !important;
+    no-repeat 500px 100px/51px url(../images/oval.png), #eaf3ff;
   width: 100%;
   height: 100%;
   overflow: auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
   transform: translateY(0);
   transition: transform 250ms linear;
   -webkit-transition: transform 250ms linear;
   -moz-transition: transform 250ms linear;
   -ms-transition: transform 250ms linear;
   -o-transition: transform 250ms linear;
+}
+.menu-mobile::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .button-modal {
@@ -383,16 +391,17 @@ p {
   flex-shrink: 0;
 }
 
-.menu-mobile__container {
+/* .menu-mobile__container {
   width: 100vw;
   height: 100vh;
   padding: 60px 40px 50px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 30px;
-}
+  overflow: auto;
+} */
 
 .menu-mobil.is-hidden {
   transform: translateY(-100%);
@@ -406,7 +415,7 @@ p {
   gap: 24px;
 }
 
-.mobile__item {
+.menu-mobile__item {
   margin: 0 auto;
 }
 
@@ -425,7 +434,7 @@ p {
 }
 
 .contact__icon svg {
-  fill: #333333 !important;
+  fill: #333333;
   transition: fill 250ms linear;
   -webkit-transition: fill 250ms linear;
   -moz-transition: fill 250ms linear;
@@ -445,15 +454,15 @@ p {
 
 .menu-mobile__list p:focus,
 .menu-mobile__list p:hover {
-  color: #4a90e2 !important;
+  color: #4a90e2;
 }
 
 .contact__item:focus svg,
 .contact__item:hover svg,
 .contact__item:focus p,
 .contact__item:hover p {
-  fill: #4a90e2 !important;
-  color: #4a90e2 !important;
+  fill: #4a90e2;
+  color: #4a90e2;
 }
 
 /* --------- contact menu --------- */
@@ -476,14 +485,12 @@ p {
 }
 
 .contact__container {
-  height: 85vh;
+  height: 500px;
   width: 75vw;
   max-width: 700px;
   min-width: 325px;
   overflow: hidden;
-  background: no-repeat 200px 130px/27px url(../images/oval.png),
-    no-repeat 370px 305px/35px url(../images/oval.png),
-    no-repeat 500px 100px/51px url(../images/oval.png), #eaf3ff !important;
+  background: #eaf3ff;
   transition: transform 250ms linear;
   -webkit-transition: transform 250ms linear;
   -moz-transition: transform 250ms linear;
@@ -507,22 +514,27 @@ p {
     padding: 0 20px 0 20px;
   }
 }
+@media screen and (max-height: 550px) {
+  .contact__container {
+    height: 87vh;
+  }
+}
 
 .button-contact {
-  width: 48px;
+  width: 35px;
+  height: 35px;
   position: absolute;
+  z-index: 2;
   top: 10px;
   right: 10px;
   flex-shrink: 0;
-  background-color: #eaf3ff !important;
+  background-color: #eaf3ff;
 }
 
 .contact__address-form {
-  width: 100%;
   height: 100%;
   display: flex;
   overflow: auto;
-  /* padding: 50px 40px 30px 40px; */
   padding: 50px 0 30px;
   justify-content: space-between;
   align-items: flex-start;
@@ -539,6 +551,9 @@ p {
 }
 
 .form {
+  background: no-repeat 200px 50px/27px url(../images/oval.png),
+    no-repeat 70px 200px/35px url(../images/oval.png),
+    no-repeat 305px 170px/51px url(../images/oval.png), #eaf3ff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -546,6 +561,11 @@ p {
   gap: 10px;
   flex-shrink: 0;
   flex-grow: 1;
+}
+@media screen and (max-width: 750px) {
+  .form {
+    width: 100%;
+  }
 }
 
 .form__label {
@@ -558,37 +578,46 @@ p {
   outline: none;
   width: 240px;
   height: 30px;
-  border: 1px solid #bad6f7 !important;
+  border: 1px solid #bad6f7;
   border-radius: 4px;
   padding: 0 0 0 15px;
   margin: 2px 0 0;
   transition: border-color 250ms linear;
   display: block;
 }
+@media screen and (max-width: 750px) {
+  .form__input {
+    width: 280px;
+  }
+}
 
 .form__input:focus,
 .form__input:hover,
 .form__text:focus,
 .form__text:hover {
-  border-color: #4a90e2 !important;
+  border-color: #4a90e2;
 }
 
 .form__label:focus-within {
-  color: #4a90e2 !important;
+  color: #4a90e2;
 }
-.form__icon {
-}
+
 .form__text {
   margin: 2px 0 0;
   outline: none;
   width: 240px;
   height: 80px;
-  border: 1px solid #bad6f7 !important;
+  border: 1px solid #bad6f7;
   border-radius: 4px;
   padding: 10px 15px;
   resize: none;
   transition: border-color 250ms linear;
   display: block;
+}
+@media screen and (max-width: 750px) {
+  .form__text {
+    width: 280px;
+  }
 }
 .form__text::placeholder {
   font-size: small;
@@ -607,14 +636,21 @@ p {
 }
 
 .contact__line {
-  height: 160%;
-  border-left: 1px solid #bad6f7 !important;
+  height: 410px;
+  border-left: 1px solid #bad6f7;
 }
 @media screen and (max-width: 750px) {
   .contact__line {
-    width: 110%;
-    border-top: 1px solid #bad6f7 !important;
+    height: 0;
+    width: 105%;
+    border-top: 1px solid #bad6f7;
   }
+}
+
+.contact__address {
+  background: no-repeat 150px 135px/27px url(../images/oval.png),
+    no-repeat 200px 240px/35px url(../images/oval.png),
+    no-repeat 260px 100px/51px url(../images/oval.png), #eaf3ff;
 }
 
 .contact__address > h4 {
@@ -650,7 +686,7 @@ p {
     no-repeat 1360px 404px/35px url(../images/oval.png),
     no-repeat 640px 564px/27px url(../images/oval.png),
     no-repeat 370px 765px/35px url(../images/oval.png),
-    no-repeat 900px 714px/51px url(../images/oval.png), #eaf3ff !important;
+    no-repeat 900px 714px/51px url(../images/oval.png), #eaf3ff;
 }
 /* .grid-item {
   grid-column: 2/3;
@@ -674,7 +710,7 @@ p {
 .error__title {
   max-width: 486px;
   font-weight: 700;
-  color: #333333 !important;
+  color: #333333;
   font-size: calc(56px + 16 * ((100vw - 375px) / (1440 - 375)));
   /* font-size: calc(56px + 16 * (100vw / 1440)); */
   line-height: 1.11;
@@ -685,8 +721,8 @@ p {
 .btn-hero {
   margin-top: 42px;
   width: 154px;
-  background-color: #4a90e2 !important;
-  color: #ffffff !important;
+  background-color: #4a90e2;
+  color: #ffffff;
 }
 
 .hero__img {
@@ -718,7 +754,7 @@ p {
     no-repeat 1330px 235px/27px url(../images/oval.png),
     no-repeat 1045px 325px/51px url(../images/oval.png),
     no-repeat 200px 400px/35px url(../images/oval.png),
-    linear-gradient(to bottom, #eaf3ff 70%, #fff 70%) !important;
+    linear-gradient(to bottom, #eaf3ff 70%, #fff 70%);
 }
 
 @media screen and (max-width: 640px) {
@@ -1469,7 +1505,7 @@ p {
   margin: 0 0 58px;
 }
 
-/* --------  ------- */
+/* -------- get-started ------- */
 
 .get-started {
   padding: 75px 0;
@@ -1972,7 +2008,7 @@ p {
 
 .faq {
   text-align: center;
-  background-color: #eaf3ff;
+  background-color: #eaf3ff !important;
   padding: 150px 0 176px 0;
   /* height: 985px; */
   height: calc(1150px - 150 * ((100vw - 375px) / (1440 - 375)));
@@ -2468,7 +2504,23 @@ p {
   cursor: pointer;
 }
 
-.footer__menu a,
+.footer__item a,
+.footer__item-btn {
+  transition: color 250ms linear;
+  -webkit-transition: color 250ms linear;
+  -moz-transition: color 250ms linear;
+  -ms-transition: color 250ms linear;
+  -o-transition: color 250ms linear;
+}
+
+.footer__item a:hover,
+.footer__item a:focus,
+.footer__item-btn:hover,
+.footer__item-btn:focus {
+  color: #4a90e2;
+}
+
+/* .footer__menu a,
 .footer__servis a {
   transition: color 250ms linear;
   -webkit-transition: color 250ms linear;
@@ -2482,7 +2534,7 @@ p {
 .footer__menu a:hover,
 .footer__servis a:hover {
   color: #4a90e2;
-}
+} */
 
 .footer__flex {
   display: flex;
