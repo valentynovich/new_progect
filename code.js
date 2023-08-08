@@ -29,7 +29,7 @@
       })
          closeContactBtn.addEventListener('click', () => {
             contact.classList.toggle('is-hidden');
-            body.classList.toggle('overflow');
+            body.classList.toggle('not-scroll');
       })
 
 
