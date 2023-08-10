@@ -1,29 +1,47 @@
-/* html,
-body {
+/* .center-all-content-on-viewport {
   display: flex;
   flex-direction: column;
   align-items: center;
 } */
 
-.center-all-content-on-viewport {
+/* html {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: 100%; */
-}
+} */
 
 .height-body-and-html-for-error {
   height: 100%;
 }
 
-/* html,
-body {
-  height: 100%;
-} */
-
 body {
   font-family: "Sora", sans-serif;
+  /* min-width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; */
 }
+
+/* .center-container {
+  min-width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+} */
 
 .list {
   list-style: none;
@@ -38,17 +56,13 @@ body {
   padding: 0;
 }
 
-img,
-picture {
+img {
   display: block;
   height: auto;
-  /* width: 100%; */
   max-width: 100%;
 }
 
 .btn {
-  /* box-sizing: content-box; */
-  /* display: block; */
   font-size: 14px;
   font-weight: 700;
   line-height: 1.26;
@@ -99,8 +113,6 @@ picture {
   border-color: #ff7988;
 }
 
-/* font-size: calc(40px + 16 * (100vw / 1440)); */
-
 h2 {
   font-size: 16px;
   font-weight: 400;
@@ -115,8 +127,6 @@ h2 {
 h3 {
   max-width: 486px;
   font-size: calc(40px + 16 * ((100vw - 375px) / (1440 - 375)));
-  /* font-size: calc(40px + 16 * (100vw / 1440)); */
-  /* font-size: 56px; */
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: -2px;
@@ -168,20 +178,25 @@ p {
   color: #333333;
 }
 
-/* .container {
-  width: 1440px;
-  padding: 0 135px;
-  margin: 0 auto;
-} */
-
 .container {
   display: grid;
-  grid-template: 1fr / minmax(24px, 135px) minmax(329px, 1170px) minmax(
+  /* grid-template: 1fr / minmax(24px, 135px) minmax(329px, 1170px) minmax(
       24px,
       135px
+    ); */
+  grid-template: 1fr / minmax(24px, 500px) minmax(1170px, 1fr) minmax(
+      24px,
+      500px
     );
-  /* align-items: start; */
   overflow: hidden;
+}
+@media screen and (max-width: 1350px) {
+  .container {
+    grid-template: 1fr / minmax(24px, 125px) minmax(329px, 1170px) minmax(
+        24px,
+        125px
+      );
+  }
 }
 
 .grid-item {
@@ -233,7 +248,6 @@ p {
 
 .Informatics-background {
   background: rgba(255, 226, 229, 1);
-  /* background: rgba(255, 242, 222, 1); */
 }
 
 .Physics-background {
@@ -255,7 +269,8 @@ p {
   background: #eaf3ff;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   justify-content: center;
   z-index: 2;
   width: 100%;
@@ -263,6 +278,10 @@ p {
   grid-template: 1fr / minmax(auto, 1440px);
   padding-top: 16px;
   padding-bottom: 16px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 @media screen and (max-width: 640px) {
   .header {
@@ -378,18 +397,20 @@ p {
   z-index: 7;
   top: 0;
   left: 0;
-  padding: 60px 40px 50px 40px;
+  /* bottom: 0;
+  right: 0; */
+  padding: 60px 20px 30px 20px;
   background: no-repeat 200px 130px/27px url(../images/oval.png),
     no-repeat 370px 305px/35px url(../images/oval.png),
     no-repeat 500px 100px/51px url(../images/oval.png), #eaf3ff;
   width: 100%;
+  min-height: 250px;
+  max-height: 100vh;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
   transform: translateY(0);
   transition: transform 250ms linear;
   -webkit-transition: transform 250ms linear;
@@ -397,7 +418,16 @@ p {
   -ms-transition: transform 250ms linear;
   -o-transition: transform 250ms linear;
 }
-.menu-mobile::-webkit-scrollbar {
+.menu__container {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+}
+.menu__container::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
@@ -409,18 +439,6 @@ p {
   right: 10px;
   flex-shrink: 0;
 }
-
-/* .menu-mobile__container {
-  width: 100vw;
-  height: 100vh;
-  padding: 60px 40px 50px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 30px;
-  overflow: auto;
-} */
 
 .menu-mobil.is-hidden {
   transform: translateY(-100%);
@@ -684,19 +702,9 @@ p {
   white-space: normal;
 }
 
-.contact__item {
-}
-
-.contact__icon {
-}
-.social {
-}
-.social-contact {
-}
-.social__item {
-}
-.social__icon {
-}
+/* .backgraund {
+  background: linear-gradient(to bottom, #eaf3ff 87%, #fff 87%);
+} */
 
 /* ------- hero -------- */
 
@@ -711,9 +719,6 @@ p {
     no-repeat 370px 765px/35px url(../images/oval.png),
     no-repeat 900px 714px/51px url(../images/oval.png), #eaf3ff;
 }
-/* .grid-item {
-  grid-column: 2/3;
-} */
 
 .hero__grid {
   display: grid;
@@ -735,7 +740,6 @@ p {
   font-weight: 700;
   color: #333333;
   font-size: calc(56px + 16 * ((100vw - 375px) / (1440 - 375)));
-  /* font-size: calc(56px + 16 * (100vw / 1440)); */
   line-height: 1.11;
   letter-spacing: -3px;
   margin-bottom: 30px;
@@ -786,13 +790,6 @@ p {
   }
 }
 
-/* .categories h2,
-.categories h3,
-.categories p {
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 .categories h3 {
   margin: 0 auto 15px;
 }
@@ -808,9 +805,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 42px auto 47px auto;
+  margin: 42px auto 47px;
   gap: 29px;
-  /* overflow: hidden; */
 }
 
 .categories__item {
@@ -856,7 +852,7 @@ p {
 .courses__list {
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   margin-bottom: 32px;
 }
 
@@ -888,7 +884,7 @@ p {
 .courses__item.big {
   grid-column: span 2;
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 840px) {
   .courses__item.big {
     grid-column: span 1;
   }
@@ -1291,7 +1287,7 @@ p {
 
 .feature {
   background: linear-gradient(to bottom, #eaf3ff 88%, #fff 88%);
-  padding: 256px 0 0 0;
+  padding: 256px 0 10px 0;
 }
 
 .feature__grid {
@@ -1304,7 +1300,7 @@ p {
 
 @media screen and (max-width: 1000px) {
   .feature {
-    padding: 155px 0 0 0;
+    padding: 155px 0 10px 0;
   }
   .feature__grid {
     grid-template-columns: minmax(329px, 570px);
@@ -1536,7 +1532,7 @@ p {
 
 .get-started__container {
   display: grid;
-  grid-template-columns: minmax(28px, 100px) minmax(273px, 970px) minmax(
+  grid-template-columns: minmax(28px, 100px) minmax(273px, 1fr) minmax(
       28px,
       100px
     );
@@ -2034,7 +2030,7 @@ p {
   background-color: #eaf3ff !important;
   padding: 150px 0 176px 0;
   /* height: 985px; */
-  height: calc(1150px - 150 * ((100vw - 375px) / (1440 - 375)));
+  height: calc(1100px - 75 * ((100vw - 375px) / (2800 - 375)));
 }
 
 @media screen and (max-width: 1000px) {
@@ -2047,7 +2043,7 @@ p {
   display: grid;
   justify-content: center;
   align-items: start;
-  grid-template: auto auto auto / minmax(0px, 200px) minmax(328px, 770px) minmax(
+  grid-template: auto auto 1fr / minmax(0px, 200px) minmax(328px, 770px) minmax(
       0px,
       200px
     );
@@ -2220,7 +2216,10 @@ p {
 .blog__list {
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template: repeat(auto-fit, minmax(368px, 1fr)) / repeat(
+      auto-fit,
+      minmax(270px, 1fr)
+    );
   margin: 0 0 64px 0;
 }
 .blog__item {
@@ -2263,7 +2262,7 @@ p {
 
 .blog__background-open {
   position: relative;
-  padding: 0 0 65% 0;
+  /* padding: 0 0 65% 0; */
   height: 368px;
 }
 
@@ -2338,7 +2337,8 @@ p {
 
 .blog__background-close {
   position: relative;
-  height: 176px;
+  min-height: 176px;
+  max-height: 250px;
   overflow: hidden;
 }
 
@@ -2654,14 +2654,11 @@ p {
 /* --------- error page ---------- */
 
 .error__background {
-  /* margin: 0 auto; */
   height: 100%;
   display: flex;
-  width: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   gap: 50px;
   background: no-repeat 90% 15%/35px url(../images/oval.png),
     no-repeat 10% 30%/27px url(../images/oval.png),
@@ -2673,6 +2670,6 @@ p {
 .error__title {
   text-align: center;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 1300px;
   font-size: calc(40px + 32 * ((100vw - 375px) / (1440 - 375)));
 }

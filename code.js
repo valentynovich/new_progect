@@ -1,22 +1,27 @@
-      // открывает меню при нажатии одной кнопки, а закрывает либо кнопки либо пунктов меню, 
+      // открывает меню при нажатии одной кнопки, а закрывает либо кнопки либо пунктов меню,
       // плюс переносит на нужную часть сайта
+      // и добавляем элементу body класс not-scroll со свойством overflow: hidden, чтобы не работал скрол
       var openMenuBtn = document.querySelector("[data-mobile-menu-open]");
       var closeMenuBtn = document.querySelectorAll("[data-mobile-menu-close]");
-      var menu = document.querySelector("[data-mobile-menu]");
+var menu = document.querySelector("[data-mobile-menu]");
+      var body = document.querySelector("body")
 
       openMenuBtn.addEventListener("click", () => {
          menu.classList.toggle('is-hidden');
+         body.classList.toggle('not-scroll');
       });
       closeMenuBtn.forEach(item => {
          item.addEventListener('click', () => {
             menu.classList.toggle('is-hidden');
+            body.classList.toggle('not-scroll');
          });
       })
 
 
 
-      // открывает меню при нажатии нескольких кнопок, а закрывает одной кнопкой, 
-      var body = document.querySelector("body")
+      // открывает меню при нажатии нескольких кнопок, а закрывает одной кнопкой
+      // и добавляем элементу body класс not-scroll со свойством overflow: hidden, чтобы не работал скрол  
+      
       var openContactBtn = document.querySelectorAll("[data-contact-open]");
       var closeContactBtn = document.querySelector("[data-contact-close]");
       var contact = document.querySelector("[data-contact]");
@@ -24,7 +29,7 @@
       openContactBtn.forEach(item => {
          item.addEventListener('click', () => {
             contact.classList.toggle('is-hidden');
-            body.classList.toggle('overflow');
+            body.classList.toggle('not-scroll');
          });
       })
          closeContactBtn.addEventListener('click', () => {
@@ -38,7 +43,7 @@
       const oneSwiper = new Swiper(".oneSwiper", {
          navigation: {
             nextEl: ".one-next",
-            prevEl: ".one-prev"
+            prevEl: ".one-prev",
          },
          loop: true,
          slidesPerView: 4,
@@ -51,7 +56,7 @@
       const twoSwiper = new Swiper(".twoSwiper", {
          navigation: {
             nextEl: ".two-next",
-            prevEl: ".two-prev"
+            prevEl: ".two-prev",
          },
          loop: true,
          slidesPerView: 2,
